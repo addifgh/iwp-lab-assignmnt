@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: 'Arial';
+        }
+        
+        .result {
+            width: 382px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 450px;
+            padding: 80px;
+            background: #23463f;
+            border-radius: 15px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #277582;
+            padding: 20px;
+        }
+        
+        label {
+            color: #08ffd1;
+            font-size: 17px;
+        }
+        
+        #Uname {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        
+        #Pass {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        
+        #log {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 17px;
+            padding-left: 7px;
+            color: whitesmoke;
+        }
+        
+        span {
+            color: white;
+            font-size: 17px;
+        }
+        
+        a {
+            float: right;
+            background-color: grey;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        #t01 tr:nth-child(even) {
+            background-color: #F3F781;
+        }
+        
+        #t01 tr:nth-child(odd) {
+            background-color: #99ff99;
+        }
+        
+        #t01 th {
+            background-color: #3c8dbc;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Result Page</h2><br>
+    <div class="result">
+        <form id="result" method="get" action="result.php">
+            <label><b>REG_NO     
+        </b>    
+        </label>
+            <input type="text" name="Uname" id="Uname" placeholder="Registration number">
+            <br><br>
+            <label><b>Password     
+        </b>    
+        </label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">
+            <br><br>
+            <input type="button" name="log" id="log" value="Search" style="background-color:#248f24; text-decoration: whitesmoke;">
+            <br><br>
+
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <table id="t01">
+        <tr>
+
+            <th>Sl no</th>
+            <th>Course Code</th>
+            <th> Course Title </th>
+            <th>Credit</th>
+            <th>Faculty </th>
+            <th>Slot</th>
+            <th>Marks Obtained</th>
+            <th>Grade</th>
+
+
+        </tr>
+        <tr>
+            <td> 1 </td>
+            <td>CSE3501</td>
+            <td>NASCOOM</td>
+            <td>4</td>
+            <td>RUBY D</td>
+            <td>E1+ TE1</td>
+            <td>87</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td>CSE2001</td>
+            <td>Computer Architecture and Organization</td>
+            <td>3</td>
+            <td>LIJO VP</td>
+            <td>G1+ TG1</td>
+            <td>77</td>
+            <td>B</td>
+
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td>CSE2005</td>
+            <td>Operating System</td>
+            <td>4</td>
+            <td>GOPALAKRISHNAN T</td>
+            <td>F1</td>
+            <td>91</td>
+            <td>S</td>
+
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td>CSE4001</td>
+            <td>Parallel distribution and computing</td>
+            <td>4</td>
+            <td>PREETHA D</td>
+            <td>C1</td>
+            <td>94</td>
+            <td>S</td>
+
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td>CSE4014</td>
+            <td>Virtualization</td>
+            <td>DHURUB S</td>
+            <td>4</td>
+            <td>A1+ TA1</td>
+            <td>82</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td>CSE3013</td>
+            <td>Software Development</td>
+            <td>3</td>
+            <td>RAJKUMAR M</td>
+            <td>B1+ Tb1</td>
+            <td>96</td>
+            <td>S</td>
+
+        </tr>
+
+
+        <tr>
+            <td> 7 </td>
+            <td>STS3001</td>
+            <td>Softskills</td>
+            <td>1</td>
+            <td>SMART</td>
+            <td>D1+ TD1</td>
+            <td>80</td>
+            <td>A</td>
+
+        </tr>
+        <tr>
+            <th colspan="5" style="background-color: green;"> Total
+
+            </th>
+            <th colspan="2" style="background-color: rgb(238, 62, 39);">9.2 GPA</th>
+        </tr>
+
+</body>
+
+</html>
